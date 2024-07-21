@@ -1,0 +1,14 @@
+{
+  "persons": [
+    {
+      "date": "18-06",
+      "firstname": "Lucien",
+      "lastname": "Bramard"
+    },
+    {
+      "date": "25-12",
+      "firstname": "Noel",
+      "lastname": "Flantier"
+    }
+  ]
+}
