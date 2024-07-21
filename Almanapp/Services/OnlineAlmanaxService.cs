@@ -3,6 +3,7 @@ using Almanapp.Services.Interfaces;
 using System.Net.Http.Headers;
 
 namespace Almanapp.Services {
+    [Obsolete]
     public class OnlineAlmanaxService : IAlmanaxService {
 
         private readonly HttpClient client;
