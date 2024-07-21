@@ -1,18 +1,14 @@
 using Almanapp.Models;
 using Almanapp.Services;
+using Almanapp.Services.Interfaces;
 
 DateTime today = DateTime.Now;
 
-HttpClient client = new HttpClient();
-OnlineAlmanaxService onlineAlmanax = new OnlineAlmanaxService(client);
-onlineAlmanax.POC_OnlineAlmanax();
+IAlmanaxService almanax = new LocalAlmanaxService();
 
-ConsoleDisplayService.DisplayFormattedDateInfo(today);
+AlmanaxDay day = almanax.FindAlmanaxDayWithDateTime(today);
 
-LocalAlmanaxService almanaxParcourer = new LocalAlmanaxService();
-AlmanaxDay day = almanaxParcourer.FindAlmanaxDayWithDateTime(today);
-
-Console.WriteLine(day.date);
-Console.WriteLine(day.quest);
+ConsoleDisplayService.DisplayDateInfo(today);
+ConsoleDisplayService.DisplayAlmanaxDayInfo(day);
 
 Console.ReadLine();
