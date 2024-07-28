@@ -12,5 +12,6 @@ Améliorations envisagées mais qui ne seront probablement pas mises en place fa
 [ ] Entrer une date et afficher l'offrande du jour saisi,  
 * Aller récupérer l'offrande sur internet plutot que via une ressource statique  
  (problème, l'HTML du site d'ankama ne contient pas d'id pour la balise contenant l'offrande. Parsage manuel obligatoire.)
+* Mise en place du *DP Factory* et laisser a l'utilisateur le choix (via le menu) de la méthode de récupération des données : Local (Ressource) ou Online (krosmoz.com)  
 
 Almanax : [https://www.krosmoz.com/fr/almanax]
